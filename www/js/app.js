@@ -5,9 +5,25 @@ angular.module('App', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMessage
                     .state('app', {
                         url: '/app',
                         abstract: true,
-                        templateUrl: 'views/menu/leftmenu.html',
-                        controller: 'AppCtrl'
+                        templateUrl: 'views/home/menu.html',
+                        controller: 'appController'
                     })
+                    .state('home', {
+                        url: '/home',
+                        templateUrl: 'views/home/home.html',
+                        controller: 'homeController'
+                    })
+
+                    //.state('app.home', {
+                    //    url: '/home',
+                    //    views: {
+                    //       'menuContent': {
+                    //            templateUrl: 'views/home/home.html',
+                    //            controller: 'homeController'
+                    //        }
+                    //    }
+                    //})
+
                     .state('login', {
                         url: '/login',
                         templateUrl: 'views/login/login.html',
@@ -23,23 +39,10 @@ angular.module('App', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMessage
                         templateUrl: 'views/register/register.html',
                         controller: 'registerController'
                     })
-                    .state('home', {
-                        url: '/home',
-                        templateUrl: 'views/home/home.html',
-                        controller: 'homeController'
-                    })
                     .state('profile', {
                         url: '/profile',
                         templateUrl: 'views/profile/profile.html',
                         controller: 'profileController'
-                    })
-                    .state('app.search', {
-                        url: '/search',
-                        views: {
-                            'menuContent': {
-                                templateUrl: 'views/search/search.html'
-                            }
-                        }
                     })
                     ;
             $urlRouterProvider.otherwise('/login'); //set to login when done, use to check pages
@@ -49,7 +52,7 @@ angular.module('App', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMessage
             apiKey: "AIzaSyBsymJAzlK9eetJ2OnvEerSPynSjD9o1Zc",
             authDomain: "projectx-b1485.firebaseapp.com",
             databaseURL: "https://projectx-b1485.firebaseio.com",
-            storageBucket: "projectx-b1485.appspot.com",
+            storageBucket: "projectx-b1485.appspot.com"
         }
         )
 
