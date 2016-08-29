@@ -14,7 +14,7 @@ angular.module('App').controller('loginController', function ($scope, $state, $c
 
                         $log.log("User ID:" + authData);
                         Utils.hide();
-                        $state.go('home');
+                        $state.go('app.home');
                         $log.log("Starter page", "Home");
 
                     }, function (err) {

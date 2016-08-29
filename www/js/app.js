@@ -8,46 +8,50 @@ angular.module('App', ['ionic', 'ngStorage', 'ngCordova', 'firebase', 'ngMessage
                         templateUrl: 'views/home/menu.html',
                         controller: 'appController'
                     })
-                    .state('home', {
+                    .state('app.home', {
                         url: '/home',
-                        templateUrl: 'views/home/home.html',
-                        controller: 'homeController'
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'views/home/home.html'
+                            }}
                     })
-
-                    //.state('app.home', {
-                    //    url: '/home',
-                    //    views: {
-                    //       'menuContent': {
-                    //            templateUrl: 'views/home/home.html',
-                    //            controller: 'homeController'
-                    //        }
-                    //    }
-                    //})
-
-                    .state('login', {
+                    .state('app.login', {
                         url: '/login',
-                        templateUrl: 'views/login/login.html',
-                        controller: 'loginController'
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'views/login/login.html',
+                                controller: 'loginController'
+                            }}
                     })
-                    .state('forgot', {
+                    .state('app.forgot', {
                         url: '/forgot',
-                        templateUrl: 'views/forgot/forgot.html',
-                        controller: 'forgotController'
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'views/forgot/forgot.html',
+                                controller: 'forgotController'
+                            }}
                     })
-                    .state('register', {
+                    .state('app.register', {
                         url: '/register',
-                        templateUrl: 'views/register/register.html',
-                        controller: 'registerController'
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'views/register/register.html',
+                                controller: 'registerController'
+                            }}
                     })
-                    .state('profile', {
+                    .state('app.profile', {
                         url: '/profile',
-                        templateUrl: 'views/profile/profile.html',
-                        controller: 'profileController'
-                    })
-                    ;
-            $urlRouterProvider.otherwise('/login'); //set to login when done, use to check pages
+                        views: {
+                            'menuContent': {
+                                templateUrl: 'views/profile/profile.html',
+                                controller: 'profileController'
+                            }}
+                    });
+
+            $urlRouterProvider.otherwise('app/login'); //set to login when done, use to check pages
         })
-// Changue this for your Firebase App URL.
+
+        // Changue this for your Firebase App URL.
         .constant('FURL', {
             apiKey: "AIzaSyBsymJAzlK9eetJ2OnvEerSPynSjD9o1Zc",
             authDomain: "projectx-b1485.firebaseapp.com",
