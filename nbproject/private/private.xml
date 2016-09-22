@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>www/views/home/home.html</url>
+            <bookmark id="1">
+                <name/>
+                <line>1</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/tyuenthon/Google%20Drive/ProjectX/www/views/home/home.js</file>
-            <file>file:/C:/Users/tyuenthon/Google%20Drive/ProjectX/www/views/home/home.html</file>
-            <file>file:/C:/Users/tyuenthon/Google%20Drive/ProjectX/www/views/login/login.js</file>
-            <file>file:/C:/Users/tyuenthon/Google%20Drive/ProjectX/www/js/app.js</file>
-            <file>file:/C:/Users/tyuenthon/Google%20Drive/ProjectX/www/index.html</file>
-            <file>file:/C:/Users/tyuenthon/Google%20Drive/ProjectX/www/views/menu/leftmenu.html</file>
-            <file>file:/C:/Users/tyuenthon/Google%20Drive/ProjectX/www/views/menu/leftmenu.js</file>
+            <file>file:/C:/Users/tyuenthon/Documents/GitHub/ProjectX/www/views/home/home.html</file>
+            <file>file:/C:/Users/tyuenthon/Documents/GitHub/ProjectX/www/views/login/login.js</file>
+            <file>file:/C:/Users/tyuenthon/Documents/GitHub/ProjectX/www/views/home/menu.html</file>
+            <file>file:/C:/Users/tyuenthon/Documents/GitHub/ProjectX/www/views/login/login.html</file>
+            <file>file:/C:/Users/tyuenthon/Documents/GitHub/ProjectX/www/js/app.js</file>
+            <file>file:/C:/Users/tyuenthon/Documents/GitHub/ProjectX/www/views/home/menu.js</file>
+            <file>file:/C:/Users/tyuenthon/Documents/GitHub/ProjectX/www/views/home/home.js</file>
+            <file>file:/C:/Users/tyuenthon/Documents/GitHub/ProjectX/www/index.html</file>
         </group>
     </open-files>
 </project-private>

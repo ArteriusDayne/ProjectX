@@ -24,7 +24,7 @@ angular.module('App').factory('Utils', function ($ionicLoading, $ionicPopup) {
         },
         errMessage: function (err) {
 
-            var msg = "Unknown Error...";
+            var msg;
 
             if (err && err.code) {
                 switch (err.code) {
